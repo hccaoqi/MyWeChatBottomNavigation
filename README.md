@@ -1,0 +1,2 @@
+# MyWeChatBottomNavigation
+高仿微信底部状态栏滑动时的切换过程
