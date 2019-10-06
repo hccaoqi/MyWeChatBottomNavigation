@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:padding="8dp"
+        android:background="#ffeeeeee"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.mywechatbottomnavigation.view.TabView
+            android:id="@+id/tab_weixin"
+            app:tabImage="@mipmap/weixin_normal"
+            app:tabSelectedImage="@mipmap/weixin_pressed"
+            app:tabColor="#FF11E53F"
+            app:tabTitle="微信"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></com.example.mywechatbottomnavigation.view.TabView>
+
+
+        <com.example.mywechatbottomnavigation.view.TabView
+            android:id="@+id/tab_contact"
+            app:tabImage="@mipmap/contact_list_normal"
+            app:tabSelectedImage="@mipmap/contact_list_pressed"
+            app:tabColor="#FF11E53F"
+            app:tabTitle="联系人"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></com.example.mywechatbottomnavigation.view.TabView>
+
+        <com.example.mywechatbottomnavigation.view.TabView
+            android:id="@+id/tab_find"
+            app:tabImage="@mipmap/find_normal"
+            app:tabSelectedImage="@mipmap/find_pressed"
+            app:tabColor="#FF11E53F"
+            app:tabTitle="发现"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></com.example.mywechatbottomnavigation.view.TabView>
+
+        <com.example.mywechatbottomnavigation.view.TabView
+            android:id="@+id/tab_profile"
+            app:tabImage="@mipmap/profile_normal"
+            app:tabSelectedImage="@mipmap/profile_pressed"
+            app:tabColor="#FF11E53F"
+            app:tabTitle="我"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></com.example.mywechatbottomnavigation.view.TabView>
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
